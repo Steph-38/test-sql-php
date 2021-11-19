@@ -1,0 +1,7 @@
+.black-button {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border: 2px solid grey;
+    border-radius: 4px;
+}

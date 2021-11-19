@@ -1,0 +1,22 @@
+1) Afficher tous les clients ( Nom, Prénom ) habitant en FRANCE par ordre croissant des
+noms.
+
+"SELECT nom, prenom FROM client WHERE pays='FRANCE' ORDER BY nom"
+
+2) Le détail d'une commande avec comme clef primaire le n°10 et la clef étrangère le n°1992
+et ses produits par ordre décroissant des références.
+
+"SELECT * FROM commande WHERE orders_id=10 AND customers_id=1992
+INNER JOIN produits ON commande.id = produits.orders_idw ORDER BY reference DESC"
+
+3) Pour chaque client, toutes ses commandes avec tous les produits
+
+???
+
+4) Le CA ( Chiffre d’affaire ) global du client n°1 de toutes ses commandes
+
+"SELECT total FROM commande WHERE customers_id=1"
+
+5) Les produits bestseller tout client confondu avec quantité et CA global
+
+"SELECT products_id FROM produits WHERE quantite=0"
